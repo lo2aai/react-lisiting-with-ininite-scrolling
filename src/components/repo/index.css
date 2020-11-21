@@ -1,0 +1,77 @@
+.loader,
+.error {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.repo {
+    display: grid;
+    grid-auto-flow: column;
+    height: 200px;
+    border: 1px solid #e1e4e8;
+    grid-template-columns: minmax(auto,200px) 1fr;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 4px;
+    color: #13386b;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.repo .avatar-image-container {
+    width: 200px;
+    height: 200px;
+}
+
+.repo .avatar-image-container img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+}
+
+.repo .repo-deatils {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.repo .repo-deatils p {
+    margin: 0;
+}
+
+
+.repo .repo-deatils .name-of-repo p {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.repo-deatils .repo-description {
+    width: 100%;
+    height: 50px;
+    overflow-x: scroll;
+}
+
+.repo-deatils .repo-historical-info {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.repo-deatils .repo-historical-info .repo-stars,
+.repo-deatils .repo-historical-info .repo-issues {
+    border: 1px solid #e1e4e8;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.repo-deatils .repo-historical-info .repo-stars span,
+.repo-deatils .repo-historical-info .repo-issues span,
+.repo-deatils .repo-historical-info .repo-submited-by-name span {
+    font-weight: bold;
+    text-transform: capitalize;
+}

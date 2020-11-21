@@ -1,0 +1,9 @@
+.listing-page {
+    display: grid;
+    padding: 2rem;
+    grid-auto-flow: row;
+    gap: 16px;
+}
+
+
+
